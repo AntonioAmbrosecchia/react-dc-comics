@@ -67,12 +67,14 @@ main {
 
     .blue-bar {
         display: flex;
+        position: relative;
         justify-content: space-between;
         align-items: center;
         padding-left: 10%;
         padding-right: 10%;
         height: 200px;
         background-color: var(--color-primary);
+        z-index: 3;
 
         .container {
             display: flex;
@@ -95,10 +97,51 @@ main {
 footer {
     height: 480px;
 
-    #faq_container {
-        background-image: url('/img/footer-bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
 
+    #faq_container {
+        height: 370px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-image: url('/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        #row_footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 550px;
+            padding-top: 2%;
+
+            .footer_card {
+                padding: 10px;
+                height: 210px;
+
+                h4 {
+                    color: white;
+                    padding-bottom: 10px;
+                }
+
+                li {
+                    color: gray;
+                    list-style: none;
+                    padding-top: 5px;
+                }
+            }
+        }
+
+        #container_img {
+            padding-left: 5%;
+            position: absolute;
+
+            #dc_logo_footer {
+                position: relative;
+                left: 100%;
+                transform: translate(-5%, -20%);
+            }
+        }
     }
 }
