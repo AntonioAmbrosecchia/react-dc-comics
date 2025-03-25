@@ -7,6 +7,7 @@
 
 :root {
     --color-primary: #0282f9;
+    --color-footer: #303030;
 }
 
 header {
@@ -115,6 +116,7 @@ footer {
             flex-wrap: wrap;
             max-width: 550px;
             padding-top: 2%;
+            max-height: 80%;
 
             .footer_card {
                 padding: 10px;
@@ -136,12 +138,24 @@ footer {
         #container_img {
             padding-left: 5%;
             position: absolute;
+            max-height: 0px;
 
             #dc_logo_footer {
                 position: relative;
-                left: 100%;
+                left: 110%;
                 transform: translate(-5%, -20%);
             }
         }
+    }
+
+    #social_container {
+        height: 110px;
+        position: relative;
+        background-color: var(--color-footer);
+        z-index: 3;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
 }
