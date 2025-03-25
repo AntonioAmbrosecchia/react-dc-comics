@@ -8,9 +8,9 @@ function App() {
     return (
         <div className="app">
             <Header />
-            <BlueBar />
             <main>
                 <ComicList />
+                <BlueBar />
             </main>
             <Footer />
         </div>
