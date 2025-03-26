@@ -55,7 +55,21 @@ export const Footer = () => {
                     <img id="dc_logo_footer" src="/img/dc-logo-bg.png"></img>
                 </div>
             </div>
-            <div id="social_container"></div>
+            <div id="social_container">
+                <a href="#">
+                    <div id="container_sing_up">
+                        <p>SING&#45;UP NOW&#33;</p>
+                    </div>
+                </a>
+                <div id="social">
+                    <p>FOLLOW US</p>
+                    <a href="#"><img src="/img/footer-facebook.png"></img></a>
+                    <a href="#"><img src="/img/footer-twitter.png"></img></a>
+                    <a href="#"><img src="/img/footer-youtube.png"></img></a>
+                    <a href="#"><img src="/img/footer-pinterest.png"></img></a>
+                    <a href="#"><img src="/img/footer-periscope.png"></img></a>
+                </div>
+            </div>
         </footer>
     );
 };
