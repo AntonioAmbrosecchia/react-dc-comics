@@ -8,6 +8,7 @@
 :root {
     --color-primary: #0282f9;
     --color-footer: #303030;
+    --color-comic_list: #1c1c1c;
 }
 
 header {
@@ -51,18 +52,86 @@ header {
     }
 }
 
-main {
+#jumbotron {
+    position: relative;
+    height: 400px;
+    background-image: url('/img/jumbotron.jpg');
+    background-size: cover;
 
-    #comic_list {
+    #jumbotron_text {
+        position: absolute;
+        top: 100%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        color: white;
+        background-color: var(--color-primary);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+main {
+    .comic-list {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+        background-color: var(--color-comic_list);
+        padding-top: 3%;
+        padding-bottom: 3%;
         padding-left: 10%;
         padding-right: 10%;
-        background-color: black;
-        height: 135px;
+        color: white;
+        font-size: 13px;
 
-        h2 {
+
+        #comic_row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .comic_card {
+            display: flex;
+            flex-direction: column;
+            width: 185px;
+            margin: 10px;
+            padding: 10px;
+
+            .comic_image {
+                height: 185px;
+                max-width: 185px;
+                margin-bottom: 16px;
+            }
+        }
+
+
+
+
+    }
+
+    #butt_c_list {
+        background-color: var(--color-comic_list);
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        #butt_load_more {
+            display: inline-block;
+            background-color: var(--color-primary);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-bottom: 20px;
             color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
         }
     }
 
@@ -93,6 +162,8 @@ main {
             }
         }
     }
+
+
 }
 
 footer {

@@ -1,9 +1,21 @@
 import React from "react";
+import ComicCard from "./ComicCard";
 
-export const ComicList = () => {
+import comics from "../Comics";
+const ComicList = () => {
     return (
-        <section id="comic_list">
-            <h2>Content goes here</h2>
-        </section>
+        <div>
+            <div className="comic-list">
+                {comics.map((comic) => (
+                    <ComicCard key={comic.id} comic={comic} />
+                ))}
+
+            </div>
+            <div id="butt_c_list">
+                <a href="#"><div id="butt_load_more"><p>LOAD MORE</p></div></a>
+            </div>
+        </div>
     );
 };
+
+export default ComicList;

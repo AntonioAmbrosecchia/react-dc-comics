@@ -2,10 +2,9 @@ import React from "react";
 
 export const Header = () => {
     return (
+
         <header>
-
             <img id="logo" src="/img/dc-logo.png" alt="Logo DC"></img>
-
             <div id="container_menu">
                 <div className="menu">
                     <a href="#" >CARACHTERS</a>
